@@ -2,15 +2,77 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Giới thiệu</title>
+	<meta name="Webbansach" keyword="onlinebookstore">
+	<title>Cửa hàng Sách online</title>
+	<style type="text/css">
+		*{box-sizing: border-box;}
+		header{display: flex; height:15vh;}
+		#f1,nav>ul>li{display: inline-block;width: 10%;height:5vh;background-color:lightblue;}
+		#main,#listbook{display: flex;}
+		#book1,#book2,#book3{margin: 10px;}
+		#main{height:65vh;}
+		#F2{margin-top: 100px}
+		nav>ul>li:hover{background-color:lightyellow;}
+		footer{text-align: center;background-color:lightblue;height:5vh;clear: both;}
+		h1,p{text-align: center; color:darkblue; }
+	</style>
 </head>
 <body>
-	<h1><a href="https://www.facebook.com/daudau.vuong.85" target="=_blank">Trang cá nhân</a></h1>
-	<h2>Họ và tên: Nguyễn Thị Phương Dung</h2>
-	<h2>Mã SV: 686656</h2>
-	<h2>Lớp: K68KTSA</h2>
-	<h2><img src="Phương Dung.jpg" alt="" width="30%" height="30%" </h2>
+		<header>
+			<div style=" flex-grow: 1"><img src="IMG/logo.jpg" alt="logo book store" width="100%" height="100%"></div>
+			<div style=" flex-grow: 8"><h1>Cửa hàng Sách online</h1></div>
+			<div style=" flex-grow: 1"><p><a href="formdangnhap.html">Đăng nhập</a></p>
+		</header>
+	<nav>
+			<ul>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="sachphobien.html">Sách phổ biến</a></li>
+				<li><a href="sachbanchay.html">Sách bán chạy</a></li>
+				<li><a href="sachmoi.html">Sách mới</a></li>
+				<li><a href="gia1.html">Giá thấp đến cao</a></li>
+				<li><a href="gia2.html">Giá cao đến thấp</a></li>
+				<li>
+					<form action="formtimkiem.jsp" id="F1" style=" border:1px solid black;">
+						<input type="text" name="seach" placeholder="Tìm kiếm..." >
+						<input type="submit" name="submit" value="OK">
+					</form>
+				</li>
+	</nav>
+	<section id="main">
+	<div id="list">
+		<ul>
+			<li><a href="sachvn.html">Sách Việt Nam</a></li>
+			<li><a href="sachtg.html">Sách thế giới</a></li>
+			<li><a href="tieuthuyet.html">Tiểu thuyết</a></li>
+			<li><a href="truyentranh.html">Truyện tranh</a></li>
+		</ul>
+		<form action="formdangky.jsp" id="F2"> 
+		<p>Đăng ký nhận email</p>
+			<input type="text" name="email" placeholder="Nhập email...">
+			<input type="submit" name="submit" value="Gửi">
+		</form>
+	</div>
+<div id="listbook">
+<div id="book1"style=" flex-grow: 2">
+	<img src="IMG/sachvn.jpg" alt="sách cây cam ngọt"width="100%" height="90%">
+	<p>70,000đ<a href="chitiet1.html">Xem chi tiết</a></p>
+</div>
+<div id="book2"style=" flex-grow: 2">
+	<img src="IMG/tt.jpg" alt="tiểu thuyết ngôn tình"width="100%" height="90%">
+	<p>125,000đ<a href="chitiet2.html">Xem chi tiết</a></p>
+</div>
+<div id="book3"style=" flex-grow: 2">
+	<img src="IMG/truyen.jpg" alt="Harry Potter"width="100%" height="90%">
+	<p>175,000đ<a href="chitiet3.html">Xem chi tiết</a></p>
+</div>
+<div id="book4"style=" flex-grow: 2">
+	<img src="IMG/truyentranh.jpg" alt="manga HXH"width="100%" height="90%">
+	<p>55,000đ<a href="chitiet4.html">Xem chi tiết</a></p>
+</div>
+</div>
+</section>
+<footer>
+	<p>Copyright by: NTPD &copy;</p>
+</footer>
 </body>
-
 </html>
